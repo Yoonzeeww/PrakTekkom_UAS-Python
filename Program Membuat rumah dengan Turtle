@@ -1,0 +1,95 @@
+#Membuat rumah dengan Turtle
+#Import turtle untuk membuat turtle 
+import turtle
+#Mengatur Screen
+window = turtle.Screen()
+#Mengatur Warna Background Biru Muda
+window.bgcolor("light sky blue")
+t = turtle.Turtle()
+#Membuat Kotak
+t.pencolor("tan3")
+t.penup()
+t.goto(-130,5)
+t.down()
+t.fillcolor("burlywood")
+t.begin_fill()
+for i in range(2):
+    t.forward(240)
+    t.right(90)
+    t.forward(200)
+    t.right(90)
+t.end_fill()
+
+#Membuat Pintu
+t.penup()
+t.goto(-30, -190)
+t.pendown()
+t.fillcolor("brown")
+t.begin_fill()
+t.left(90)
+t.forward(40)
+for i in range(4):
+    t.right(90)
+    t.forward(45)
+t.end_fill()
+
+#Membuat Jendela
+t.penup()
+t.goto(-95, -20)
+t.pendown()
+t.fillcolor("deepskyblue1")
+t.begin_fill()
+for i in range(4):
+    t.right(90)
+    t.forward(40)
+t.end_fill()
+
+#Membuat Atap Rumah
+t.penup()
+t.goto(-130, 5)
+t.down()
+t.fillcolor("chocolate4")
+t.begin_fill()
+t.right(45)
+t.forward(170)
+t.right(90)
+t.forward(170)
+t.end_fill()
+
+#Membuat Matahari
+t.penup()
+t.goto(-155,150)
+t.down()
+t.pencolor("yellow1")
+t.fillcolor("yellow1")
+t.begin_fill()
+t.circle(30)
+t.end_fill()
+
+#Membuat Rumput
+t.penup()
+t.goto(-30,-190)
+t.down()
+t.pencolor("green")
+t.fillcolor("green")
+t.begin_fill()
+t.left(45)
+t.forward(230)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(400)
+t.right(90)
+t.forward(50)
+t.right(90)
+t.forward(200)
+t.end_fill()
+t.penup()
+t.goto(-75,150)
+t.down()
+
+#Membuat pesan untuk orang tertentu
+t.write("""Saya suka tidur.
+Karena hidup saya cenderung berantakan ketika saya bangun.
+- Oktavianus Bima Jadiva_71210786""", font=19)
+window.exitonclick()
