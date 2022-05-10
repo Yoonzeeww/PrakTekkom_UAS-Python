@@ -1,0 +1,29 @@
+##Membuat sebuah program dimana terdapat 2 input dari user. 
+##Jika input pertama dan kedua adalah bilangan genap = input pertama akan dipangkat oleh input kedua.
+##Jika input pertama dan kedua adalah bilangan ganjil = input pertama akan dikurangi oleh inputan kedua.
+##Jika inputan pertama adalah bilangan ganjil dan inputan kedua adalah bilangan genap = input pertama akan dibagi oleh input kedua.
+##Jika input pertama adalah bilangan genap dan input kedua adalah bilangan ganjil = input pertama akan ditambah oleh input kedua.
+#Memasukkan input Angka pertama
+AngkaPertama = int(input("Masukkan angka pertama: "))
+#Memasukkan input Angka kedua
+AngkaKedua = int(input("Masukkan angka kedua: "))
+#p1 = Pangkat/Perpangkatan
+p1  = (AngkaPertama ** AngkaKedua)
+#k1 = Kurang/Pengurangan
+k1  = (AngkaPertama - AngkaKedua)
+#b1 = Bagi/Pembagian
+b1  = (AngkaPertama / AngkaKedua)
+#t1 = Tambah/Pertambahan
+t1  = (AngkaPertama + AngkaKedua)
+if AngkaPertama % 2 == 0 and AngkaKedua % 2 == 0:
+    #Mencetak Hasil
+    print("Hasil yang didapat adalah" ,p1)
+elif AngkaPertama % 2 == 1 and AngkaKedua % 2 == 1:
+    #Mencetak Hasil
+    print("Hasil yang didapat adalah" ,k1)
+elif AngkaPertama % 2 == 1 and AngkaKedua % 2 == 0:
+    #Mencetak Hasil
+    print("Hasil yang didapat adalah" ,b1)
+elif AngkaPertama % 2 == 0 and AngkaKedua % 2 == 1:
+    #Mencetak Hasil
+    print("Hasil yang didapat adalah" ,t1)
