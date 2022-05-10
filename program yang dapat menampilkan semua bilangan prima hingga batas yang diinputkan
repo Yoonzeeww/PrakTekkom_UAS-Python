@@ -1,0 +1,17 @@
+##Membuat program yang dapat menampilkan semua bilangan prima hingga batas yang diinputkan. 
+#Membuat Function "cekPrima"
+def cekPrima(Angka):
+    ##Menghitung rentang angka(Angka +1)
+    for A1 in range (2 ,Angka +1):
+        ##Membuat bilangan prima
+        for i in range(2 ,A1):
+            if A1%i==0:
+                ##Break untuk "Menghentikan Perulangan"
+                break
+        else:
+            print(A1, end=" ")
+#Memasukkan Input Angka
+angka = int(input("Masukkan bilangan: "))
+#Mencetak Bilangan Prima
+print("Bilangan primanya ada" ,end=" ")
+cekPrima(angka)
