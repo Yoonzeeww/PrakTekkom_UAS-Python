@@ -1,0 +1,20 @@
+##Membuat program yang dapat mengeluarkan output “#” 
+#Memasukan input angka 
+InputAngka = int(input("Masukkan bilangan: "))
+##Menggunakan fungsi range untuk menghasilkan list
+for angka in range(InputAngka):
+    if angka == 0:
+        #Mencetak #
+        print("#" ,end=" ")
+        #Mencetak ###
+        print("### "*(InputAngka-1))
+    elif angka == InputAngka - 1:
+        #Mencetak ###
+        print("### "*(InputAngka - 1) ,end="")
+        #Mencetak ##
+        print("##")
+    else:
+        for i in range(InputAngka*2-1):
+            #Mencetak #
+            print("#" ,end=" ")
+        print("")
